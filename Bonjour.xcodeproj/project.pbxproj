@@ -16,6 +16,8 @@
 		842733F7273FC9480051B4B5 /* BonjourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842733F6273FC9480051B4B5 /* BonjourTests.swift */; };
 		84273401273FC9480051B4B5 /* BonjourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273400273FC9480051B4B5 /* BonjourUITests.swift */; };
 		84273403273FC9480051B4B5 /* BonjourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273402273FC9480051B4B5 /* BonjourUITestsLaunchTests.swift */; };
+		E1EC15FE4F283A11AE7FA9D0 /* Pods_BonjourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4E7590681531EAFFDD9B48 /* Pods_BonjourTests.framework */; };
+		FB6F4FDBCE7558FD6FA2832C /* Pods_Bonjour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63046C131B6E69BEE9597E7 /* Pods_Bonjour.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4E7590681531EAFFDD9B48 /* Pods_BonjourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonjourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FDAF8AED7D6C5A2BC0FBA1 /* Pods-BonjourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonjourTests.debug.xcconfig"; path = "Target Support Files/Pods-BonjourTests/Pods-BonjourTests.debug.xcconfig"; sourceTree = "<group>"; };
 		842733DC273FC9450051B4B5 /* Bonjour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonjour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842733DF273FC9450051B4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842733E1273FC9450051B4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		842733FC273FC9480051B4B5 /* BonjourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonjourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84273400273FC9480051B4B5 /* BonjourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourUITests.swift; sourceTree = "<group>"; };
 		84273402273FC9480051B4B5 /* BonjourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B594F2E53571821977DD3F3 /* Pods-Bonjour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjour.debug.xcconfig"; path = "Target Support Files/Pods-Bonjour/Pods-Bonjour.debug.xcconfig"; sourceTree = "<group>"; };
+		A4340AA08B34321F87881264 /* Pods-Bonjour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjour.release.xcconfig"; path = "Target Support Files/Pods-Bonjour/Pods-Bonjour.release.xcconfig"; sourceTree = "<group>"; };
+		A63046C131B6E69BEE9597E7 /* Pods_Bonjour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonjour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C138186C9971ACA32E5E8410 /* Pods-BonjourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonjourTests.release.xcconfig"; path = "Target Support Files/Pods-BonjourTests/Pods-BonjourTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6F4FDBCE7558FD6FA2832C /* Pods_Bonjour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EC15FE4F283A11AE7FA9D0 /* Pods_BonjourTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F2A7F8AFC311BE77A876B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A63046C131B6E69BEE9597E7 /* Pods_Bonjour.framework */,
+				2A4E7590681531EAFFDD9B48 /* Pods_BonjourTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		842733D3273FC9450051B4B5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,8 @@
 				842733F5273FC9480051B4B5 /* BonjourTests */,
 				842733FF273FC9480051B4B5 /* BonjourUITests */,
 				842733DD273FC9450051B4B5 /* Products */,
+				A24E2746AE59A4078364E588 /* Pods */,
+				06F2A7F8AFC311BE77A876B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +148,18 @@
 			path = BonjourUITests;
 			sourceTree = "<group>";
 		};
+		A24E2746AE59A4078364E588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B594F2E53571821977DD3F3 /* Pods-Bonjour.debug.xcconfig */,
+				A4340AA08B34321F87881264 /* Pods-Bonjour.release.xcconfig */,
+				45FDAF8AED7D6C5A2BC0FBA1 /* Pods-BonjourTests.debug.xcconfig */,
+				C138186C9971ACA32E5E8410 /* Pods-BonjourTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84273406273FC9480051B4B5 /* Build configuration list for PBXNativeTarget "Bonjour" */;
 			buildPhases = (
+				804A02CA2D8F90EEAA998402 /* [CP] Check Pods Manifest.lock */,
 				842733D8273FC9450051B4B5 /* Sources */,
 				842733D9273FC9450051B4B5 /* Frameworks */,
 				842733DA273FC9450051B4B5 /* Resources */,
+				E7D03187A7970093926089AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84273409273FC9480051B4B5 /* Build configuration list for PBXNativeTarget "BonjourTests" */;
 			buildPhases = (
+				E2FAE4646741C7A6923EAFCE /* [CP] Check Pods Manifest.lock */,
 				842733EE273FC9480051B4B5 /* Sources */,
 				842733EF273FC9480051B4B5 /* Frameworks */,
 				842733F0273FC9480051B4B5 /* Resources */,
@@ -252,6 +288,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		804A02CA2D8F90EEAA998402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bonjour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2FAE4646741C7A6923EAFCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BonjourTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D03187A7970093926089AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonjour/Pods-Bonjour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonjour/Pods-Bonjour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bonjour/Pods-Bonjour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842733D8273FC9450051B4B5 /* Sources */ = {
@@ -434,6 +534,7 @@
 		};
 		84273407273FC9480051B4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B594F2E53571821977DD3F3 /* Pods-Bonjour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +563,7 @@
 		};
 		84273408273FC9480051B4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4340AA08B34321F87881264 /* Pods-Bonjour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +592,7 @@
 		};
 		8427340A273FC9480051B4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FDAF8AED7D6C5A2BC0FBA1 /* Pods-BonjourTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +618,7 @@
 		};
 		8427340B273FC9480051B4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C138186C9971ACA32E5E8410 /* Pods-BonjourTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
