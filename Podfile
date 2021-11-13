@@ -13,6 +13,7 @@ target 'Bonjour' do
   pod 'SwiftLint'
   pod 'Nuke'
   pod 'ESPullToRefresh'
+  pod 'CocoaAsyncSocket'
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|

@@ -18,6 +18,12 @@
 		84273403273FC9480051B4B5 /* BonjourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273402273FC9480051B4B5 /* BonjourUITestsLaunchTests.swift */; };
 		84273410273FD0DF0051B4B5 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427340F273FD0DF0051B4B5 /* Observable.swift */; };
 		84273414273FD4F40051B4B5 /* CreateServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273413273FD4F40051B4B5 /* CreateServiceController.swift */; };
+		84273416273FD6F30051B4B5 /* BonjourSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273415273FD6F30051B4B5 /* BonjourSingleton.swift */; };
+		84273418273FDAB60051B4B5 /* BonjourLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273417273FDAB60051B4B5 /* BonjourLogger.swift */; };
+		8427341D273FE0810051B4B5 /* BonjourConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273419273FE0810051B4B5 /* BonjourConnection.swift */; };
+		8427341E273FE0810051B4B5 /* BonjourResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427341A273FE0810051B4B5 /* BonjourResponse.swift */; };
+		8427341F273FE0810051B4B5 /* BonjourParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427341B273FE0810051B4B5 /* BonjourParser.swift */; };
+		84273420273FE0810051B4B5 /* BonjourRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427341C273FE0810051B4B5 /* BonjourRequest.swift */; };
 		E1EC15FE4F283A11AE7FA9D0 /* Pods_BonjourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4E7590681531EAFFDD9B48 /* Pods_BonjourTests.framework */; };
 		FB6F4FDBCE7558FD6FA2832C /* Pods_Bonjour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63046C131B6E69BEE9597E7 /* Pods_Bonjour.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +63,12 @@
 		84273402273FC9480051B4B5 /* BonjourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8427340F273FD0DF0051B4B5 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		84273413273FD4F40051B4B5 /* CreateServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateServiceController.swift; sourceTree = "<group>"; };
+		84273415273FD6F30051B4B5 /* BonjourSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourSingleton.swift; sourceTree = "<group>"; };
+		84273417273FDAB60051B4B5 /* BonjourLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourLogger.swift; sourceTree = "<group>"; };
+		84273419273FE0810051B4B5 /* BonjourConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourConnection.swift; sourceTree = "<group>"; };
+		8427341A273FE0810051B4B5 /* BonjourResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourResponse.swift; sourceTree = "<group>"; };
+		8427341B273FE0810051B4B5 /* BonjourParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourParser.swift; sourceTree = "<group>"; };
+		8427341C273FE0810051B4B5 /* BonjourRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourRequest.swift; sourceTree = "<group>"; };
 		9B594F2E53571821977DD3F3 /* Pods-Bonjour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjour.debug.xcconfig"; path = "Target Support Files/Pods-Bonjour/Pods-Bonjour.debug.xcconfig"; sourceTree = "<group>"; };
 		A4340AA08B34321F87881264 /* Pods-Bonjour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjour.release.xcconfig"; path = "Target Support Files/Pods-Bonjour/Pods-Bonjour.release.xcconfig"; sourceTree = "<group>"; };
 		A63046C131B6E69BEE9597E7 /* Pods_Bonjour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonjour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +136,10 @@
 		842733DE273FC9450051B4B5 /* Bonjour */ = {
 			isa = PBXGroup;
 			children = (
+				84273419273FE0810051B4B5 /* BonjourConnection.swift */,
+				8427341B273FE0810051B4B5 /* BonjourParser.swift */,
+				8427341C273FE0810051B4B5 /* BonjourRequest.swift */,
+				8427341A273FE0810051B4B5 /* BonjourResponse.swift */,
 				8427340F273FD0DF0051B4B5 /* Observable.swift */,
 				842733DF273FC9450051B4B5 /* AppDelegate.swift */,
 				842733E1273FC9450051B4B5 /* SceneDelegate.swift */,
@@ -133,6 +149,8 @@
 				842733EA273FC9480051B4B5 /* LaunchScreen.storyboard */,
 				842733ED273FC9480051B4B5 /* Info.plist */,
 				84273413273FD4F40051B4B5 /* CreateServiceController.swift */,
+				84273415273FD6F30051B4B5 /* BonjourSingleton.swift */,
+				84273417273FDAB60051B4B5 /* BonjourLogger.swift */,
 			);
 			path = Bonjour;
 			sourceTree = "<group>";
@@ -364,10 +382,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84273410273FD0DF0051B4B5 /* Observable.swift in Sources */,
+				8427341D273FE0810051B4B5 /* BonjourConnection.swift in Sources */,
+				84273420273FE0810051B4B5 /* BonjourRequest.swift in Sources */,
+				8427341F273FE0810051B4B5 /* BonjourParser.swift in Sources */,
 				842733E4273FC9450051B4B5 /* ViewController.swift in Sources */,
 				842733E0273FC9450051B4B5 /* AppDelegate.swift in Sources */,
+				84273418273FDAB60051B4B5 /* BonjourLogger.swift in Sources */,
+				84273416273FD6F30051B4B5 /* BonjourSingleton.swift in Sources */,
 				84273414273FD4F40051B4B5 /* CreateServiceController.swift in Sources */,
 				842733E2273FC9450051B4B5 /* SceneDelegate.swift in Sources */,
+				8427341E273FE0810051B4B5 /* BonjourResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
