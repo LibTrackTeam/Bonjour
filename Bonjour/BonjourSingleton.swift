@@ -23,7 +23,7 @@ public class BonjourService : NSObject {
     let port: UInt16
     let name: String
     public weak var delegate:BonjourServiceDelegate?
-    private var service:NetService? {
+    public var service:NetService? {
         didSet {
             isRunning = service != nil
             delegate?.serviceRunningStateDidChange(self)

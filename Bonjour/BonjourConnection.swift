@@ -17,7 +17,7 @@ public class BonjourConnection: NSObject, ObservableObject {
     @Published public var isConnected = false
     public weak var delegate: BonjourConnectionDelegate?
     private let service: NetService
-    private var socket: GCDAsyncSocket? = nil
+    //private var socket: GCDAsyncSocket? = nil
     private var buffer: Data? = nil
     public typealias CompletionHandler = (BonjourResponse, [String:Any]?)->()
     private var callbacks = [String:CompletionHandler]()
@@ -35,7 +35,7 @@ public class BonjourConnection: NSObject, ObservableObject {
             return
         }
 
-        let socket = GCDAsyncSocket(delegate: self, delegateQueue: .main)
+        /*let socket = GCDAsyncSocket(delegate: self, delegateQueue: .main)
         service.addresses?.forEach({ address in
             if self.socket == nil {
                 do {
@@ -45,17 +45,18 @@ public class BonjourConnection: NSObject, ObservableObject {
                     BonjourLogWarning("BonjourConnection:connect failed \(error.localizedDescription)")
                 }
             }
-        })
+        })*/
     }
     
     public func disconnect() {
         BonjourLog("BonjourConnection:disconnect")
-        if let socket = self.socket {
+       /*if let socket = self.socket {
             socket.disconnect()
-        }
+        }*/
+        
     }
     
-    public func send(req reqInput: BonjourRequest, callback: CompletionHandler? = nil) {
+    /*public func send(req reqInput: BonjourRequest, callback: CompletionHandler? = nil) {
         BonjourLog("BonjourConnection:send \(reqInput)")
         var req = reqInput
         if let callback = callback {
@@ -67,13 +68,13 @@ public class BonjourConnection: NSObject, ObservableObject {
         if let body = req.body {
             socket?.write(body, withTimeout: -1.0, tag: 3)
         }
-    }
+    }*/
     
     public func call(_ name: String, params: [String:Any], callback: CompletionHandler? = nil) {
         BonjourLog("BonjourConnection:call \(name)")
         var req = BonjourRequest(path: "/api/\(name)", method: .Post)
         req.setBody(json: params)
-        send(req: req, callback: callback)
+        //send(req: req, callback: callback)
     }
 }
 
@@ -88,7 +89,7 @@ extension BonjourConnection : NetServiceDelegate {
     }
     
 }
-
+/*
 extension BonjourConnection : GCDAsyncSocketDelegate {
     public func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         BonjourLog("BonjourConnection:socket:didConnectToHost")
@@ -98,7 +99,7 @@ extension BonjourConnection : GCDAsyncSocketDelegate {
     
     public func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
         BonjourLog("BonjourConnection:socket:didDisconnect")
-        socket = nil
+        //socket = nil
         isConnected = false
     }
     
@@ -140,3 +141,4 @@ extension BonjourConnection : GCDAsyncSocketDelegate {
         // print("socket:didWriteDataWithTag")
     }
 }
+*/
